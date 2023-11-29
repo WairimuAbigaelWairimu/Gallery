@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body, html {
+    height: 100%;
+  }
+  
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 2.5em;
+    font-size: 1.2rem;
+}
+.logo{
+    font-family: 'Lora', serif;
+}
+.active{
+   border-bottom: solid rgba(0, 0, 0, 0.5);
+}
+.menu a{
+   padding: 0.1em 1em;
+}
+.menu a:hover{
+    border-bottom: solid rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.icons i{
+    padding: 1em;
+}
+.parallax{
+    background-image: url(images/gallery-img11.webp);
+    min-height: 500px;
+   width: 100%;
+   
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.gallery{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #fff;
+}
+.gallery img{
+    width: 33.3%;
+    padding: 1em;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 2.5em;
+    font-size: 0.8rem;
+}
+
+/*BIO */
+.bio-content{
+    text-align: center;
+    margin-top: 2em;
+}
+.bio-content img{
+    min-height: 60svh;
+    max-width: 60svh;
+    border-radius: 50%;
+    padding: 1em;
+}
+.bio-content p{
+    line-height: 2em;
+    font-size: 1.2rem;
+    padding: 1em;
+}
+button{
+    padding: 1em 1.3em;
+    margin: 3em;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 1;
+}
+
+/* CONTACT PAGE */
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    margin-top: 2em;
+}
+.contact-content img{
+    width: 33.3%;
+    height: auto;
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+   }
+   input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 1em;
+    margin-top: 0.75em;
+   }
+   
+   input[type=submit] {
+    margin-top: 1em;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+   }
+   
+   input[type=submit]:hover {
+    background-color: #45a049;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media (max-width: 834px) {
+    header {
+        display: none;
+    }
+    .contact-content{
+        flex-wrap: wrap;
+    }
+    .contact-content img{
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .gallery img {
+        width: 50%;
+    }
+}
